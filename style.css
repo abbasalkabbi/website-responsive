@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Raleway", sans-serif;
+}
+body{
+    background-color: #f1f1f1;
+}
+/*Start Style for header */
+header{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+header h1{
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+header p{
+   text-align: center; 
+   font-size: 20px;
+}
+header p span{
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+/*End Style for header */
+/*style for container*/
+.container{
+    width: 90%;
+    margin: auto;
+    margin-bottom:10px ;
+}
+/*Start Style for left */
+.left >div{
+   box-shadow: 
+          5px 5px 5px #bebdbd,
+          -5px -5px 5px #bebdbd;
+    margin-top: 10px ;
+    height: 500px;
+    background-color: white;
+}
+
+.left >div img{
+    width: 100%;
+}
+/*Style h1 in left */
+.left >div h1{
+    margin: 10px;
+    font-size: 22.2px;
+}
+/*Style for p in left*/
+.left>div p{
+  margin:2%;
+}
+/*Style button in left */
+.left >div button{
+    margin-top: 1%;
+    margin-left: 5%;
+    
+    padding: 10px;
+    background-color: White;
+    color: #000;
+    border: #ccc solid 2px;
+    cursor: pointer;
+}
+.left >div button:hover{
+    background-color: #dbdbdb;
+}
+
+/*End Style for left */
+
+/*Start Style for right  */
+.right >div{
+    box-shadow: 
+               5px 5px 5px #bebdbd,
+               -5px -5px 5px #bebdbd;
+    background-color: White;
+    margin-top: 10px ;
+    /*height: 500px;*/
+}
+/*Start style for div my-name */
+.right .my-name{
+    overflow: auto;
+}
+
+.right .my-name img{
+    width: 100%;
+}
+.right .my-name h1{
+    margin: 10px;
+}
+.right .my-name p{
+    margin: 10px;
+}
+/*End style for div my-name */
+/*Start Style popular posts */
+/*Style for h1 */
+.right .popular-posts h1{
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+.right .popular-posts .item{
+    overflow: hidden;
+}
+/*Style img in item*/
+.right .popular-posts .item .imge{
+    float: left;
+    width: 20%;
+    overflow: hidden;
+}
+.right .popular-posts .item .imge img{
+    width: 50px;
+    margin: 10px;
+}
+/*Style content in item*/
+.right .popular-posts .item .content{
+    width: 40%;
+    float: left;
+    margin: 10px 10px 0 1%;
+}
+
+/*End Style popular posts*/
+/*Style about in rihgt*/
+.right .about {
+    height: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+/*End Style for right  */
+/*Start footer */
+footer{
+    margin-top: 10%;
+    background-color: #616161;
+    text-align: center;
+}
+footer li{
+    list-style: none;
+}
+footer li:hover{
+    opacity: 10%;
+   
+    
+}
+/*Style for pc */
+@media screen and (min-width:900px){
+    /*Start style for left*/
+    .left{
+       display:inline-block;
+       width: 60%;
+    }
+    
+   
+    /*End style for left*/
+    
+    .right{
+        
+        float: right;
+        width: 39%;
+    }
+    .right .popular-posts .item .content{
+        width: 40%;
+        float: left;
+        margin: 10px 10px 0 0.01%;
+    }
+    
+}
+    
